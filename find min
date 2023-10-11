@@ -1,0 +1,21 @@
+ public static int readInteger(){
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        return a;
+    }
+    public static int[] readElements(int a){
+     Scanner s=new Scanner(System.in);
+     int[] array=new int[a];
+     for(int i=0;i<a;i++){
+         array[i]=s.nextInt();
+         System.out.println();
+     }return array;
+    }
+    public static int findMin(int[] array){
+     int min=Integer.MAX_VALUE;
+     for(int l:array){
+         if(l<min){
+             min=l;
+         }
+     }return min;
+    }
